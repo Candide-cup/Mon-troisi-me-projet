@@ -9,7 +9,13 @@ body{
 .navbarre{
     display: flex;
     justify-content: space-between;
-    padding: 25px ;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #33333339;
 }
 .menu{
     display: flex;
@@ -79,4 +85,52 @@ button{
     display: flex;
     justify-content: space-between;
     background-color: black ;
+} 
+
+/* responsivité */
+@media screen and (max-width: 1030px) {
+    .titre{
+        font-size: 2.5rem;
+    }
+    .stitre{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.7;
+    }
+}
+@media screen and (max-width: 700px) {
+    li{
+        font-size: 0.8rem;
+    }
+    .titre{
+        font-size: 1.5rem;
+    
+    }
+    .stitre{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.6rem;
+    }
+    .im img{
+        width: 50px;
+    }
+    button{
+        width: 80px;
+        height: 40px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 7px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .right{
+        width: 50px;
+    }
+    
 }
